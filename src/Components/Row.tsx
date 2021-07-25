@@ -7,8 +7,10 @@ export const Row = ({
 }: TodoProps) => (
   <div
     className={`
-        flex w-full p-4 mb-2 justify-between items-center
-       ${isCompleted ? "bg-gray-400 " : "bg-green-300"}
+        flex w-full p-4 mb-2 justify-between rounded items-center hover:scale-105 transform duration-200 hover:${
+          isCompleted ? "bg-gray-500 " : "bg-green-600"
+        }
+       ${isCompleted ? "bg-gray-400 " : "bg-green-500"}
       `}
   >
     <p

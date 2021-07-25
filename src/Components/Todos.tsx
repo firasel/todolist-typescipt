@@ -77,7 +77,7 @@ export const Todos = () => {
         </p>
       )}
       {hasTodos && (
-        <p>
+        <p className="text-2xl text-semibold text-gray-700 my-4">
           [{remainingTodos} of {todosLength}] todos remaining
         </p>
       )}
